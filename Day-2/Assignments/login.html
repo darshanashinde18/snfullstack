@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #uname,#pwd,#btn,h3{
+            text-align: center;
+            font-size: larger;
+        }
+        body{
+            background-color: antiquewhite
+
+        }
+        img{
+            border: 2px solid black;
+            display: block;
+            margin-top: 100px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 25%;
+        }
+        .btn{
+            background-color: lightgreen;
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="data:image/png;base64,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">
+        </div>
+
+        
+    <form name="myform" method="post" onclick="validate()">
+        <div>
+           <h3>Springer Nature (SNTPS)</h3> 
+        </div>
+        
+        <div id="uname">
+            Username:
+            <input type="text" name="name" required>
+        </div>
+       <br/><br/>
+       <div id="pwd">
+        Password:<input type="password" name="password" required>
+       </div>
+        <br/></br/>
+        <div id="btn">
+            <button class="btn" type="button" >Login</button>
+        </div>
+        
+    </form>
+    <script>  
+        function validate(){  
+        var name=document.myform.name.value;  
+        var password=document.myform.password.value;  
+          
+        if (name.length>=4 || name.length<=7){  
+          alert("name must be 4 to 7 characters");  
+          return false;  
+        }else if(password.length<6){  
+          alert("Password must be at least 6 characters long");  
+          return false;  
+          }  
+        }  
+  </script> 
+
+
+
+</body>
+</html>

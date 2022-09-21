@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            margin-top: 10%;
+
+        }
+
+        h1 {
+            text-align: center;
+            color: red;
+        }
+        body{
+            background-color: lightcyan;
+        }
+        .btn{
+            background-color: lightgreen;
+
+        }
+        form{
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to Springer Nature</h1>
+
+
+        <form name="myform" method="post" >
+            <div>
+               <h3>Springer Nature (SNTPS)</h3> 
+            </div>
+            
+            <div id="uname">
+                Username:
+                <input type="text" name="name" required>
+            </div>
+           <br/><br/>
+           <div id="pwd">
+            Password:<input type="password" name="password" required>
+           </div>
+            <br/></br/>
+            <div>
+                Email:
+                <input type="email" name="email" required>
+            </div>
+           <br/><br/>
+           <div>
+            City:
+            <input type="text" name="city">
+        </div>
+       <br/><br/>
+       <div>
+        Mobile Number:
+        <input type="number" name="mn" required>
+    </div>
+   <br/><br/>
+   <div id="btn">
+    <button class="btn" type="button" onsubmit="validate()" >Register</button>
+</div>
+            
+</form>
+
+       
+    <script>  
+        function validate(){  
+        var name=document.myform.name.value;  
+        var password=document.myform.password.value;  
+          
+        if (name.length>=4 || name.length<=7){  
+          alert("name must be 4 to 7 characters");  
+          return false;  
+        }else if(password.length<6){  
+          alert("Password must be at least 6 characters long");  
+          return false;  
+          }  
+        }  
+            </script> 
+
+</body>
+
+</html>

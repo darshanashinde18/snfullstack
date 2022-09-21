@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="event.preventDefault()" name="fdata">
+        UserName: <input type="text" name="uname" required placeholder="Enter your name"/></br>
+        Email: <input type="text" name="email" required placeholder="Enter email"/></br>
+        Password: <input type="text" name="password" required/></br>
+        City: <input type="text" name="city" required placeholder="Enter your city"/></br>
+        Mobile: <input type="number" name="mn" required/>
+    
+    <button onclick="add()">Register</button>
+    </form>
+    <div id='show'></div>
+    <button onclick="show()">show</button>
+    <script src="/emp.js"></script>
+</body>
+</html>

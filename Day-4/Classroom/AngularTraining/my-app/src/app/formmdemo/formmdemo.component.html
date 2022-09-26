@@ -1,0 +1,28 @@
+<form (ngSubmit)="addUser(data)" #data=ngForm>
+    UserName:<input type="text" name="uname" ngModel required #un=ngModel/><br/>
+    <div *ngIf="un.errors?.['required']">
+        Name can not be blank
+    </div>
+    Email:<input type="email" name="email" ngModel required email #em=ngModel /><br/>
+    <div *ngIf="em.errors?.['email']">
+        email must be correct
+    </div>
+    password:<input type="password" name="password" ngModel required #pw=ngModel /><br/>
+
+    <div *ngIf="pw.errors?.['required']">
+        password can not be blank
+    </div>
+    <Button>Register</Button>
+    
+</form>
+<button (click)="loadData()">
+    Load User
+
+</button>
+<ul>
+    <li *ngFor='let data of users'>
+        {{data | json}}
+        <!-- {{data.uname}} -->
+
+    </li>
+</ul>
